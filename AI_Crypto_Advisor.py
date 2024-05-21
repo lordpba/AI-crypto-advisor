@@ -19,7 +19,7 @@ dotenv.load_dotenv()
 
 groq = ChatGroq(temperature=0.5, model_name="llama3-8b-8192") # mixtral-8x7b-32768 - llama3-70b-8192 - gemma-7b-it - llama3-8b-8192
 gpt35_turbo = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.3)
-llm = groq
+llm = gpt35_turbo
 
 # Initialize crewAI tools
 search_tool = SerperDevTool()
@@ -130,7 +130,7 @@ financial_trading_crew = Crew(
 
 # Set the inputs for the execution of the crew
 financial_trading_inputs = {
-    'crypto_selection': 'CRO',  # BTC for Bitcoin, can be changed to any other cryptocurrency
+    'crypto_selection': 'BTC',  # BTC for Bitcoin, can be changed to any other cryptocurrency
     'initial_capital': '1000',
     'risk_tolerance': 'Medium',
     'trading_strategy_preference': 'Month Trading',
