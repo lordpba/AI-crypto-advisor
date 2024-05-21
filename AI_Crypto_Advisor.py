@@ -130,7 +130,7 @@ financial_trading_crew = Crew(
 
 # Set the inputs for the execution of the crew
 financial_trading_inputs = {
-    'crypto_selection': 'BTC',  # BTC for Bitcoin, can be changed to any other cryptocurrency
+    'crypto_selection': 'CRO',  # BTC for Bitcoin, can be changed to any other cryptocurrency
     'initial_capital': '1000',
     'risk_tolerance': 'Medium',
     'trading_strategy_preference': 'Month Trading',
