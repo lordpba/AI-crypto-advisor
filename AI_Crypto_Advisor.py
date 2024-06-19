@@ -127,10 +127,10 @@ financial_trading_crew = Crew(
     process=Process.hierarchical,
     verbose=True
 )
-
+crypto_name = input("Enter the cryptocurrency name (e.g., BTC for Bitcoin): ")
 # Set the inputs for the execution of the crew
 financial_trading_inputs = {
-    'crypto_selection': 'BTC',  # BTC for Bitcoin, can be changed to any other cryptocurrency
+    'crypto_selection': crypto_name,  # BTC for Bitcoin, can be changed to any other cryptocurrency
     'initial_capital': '1000',
     'risk_tolerance': 'Medium',
     'trading_strategy_preference': 'Month Trading',
