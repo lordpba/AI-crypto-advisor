@@ -19,7 +19,7 @@ dotenv.load_dotenv()
 
 groq = ChatGroq(temperature=0.5, model_name="llama3-8b-8192") # mixtral-8x7b-32768 - llama3-70b-8192 - gemma-7b-it - llama3-8b-8192
 gpt35_turbo = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.3)
-llm = gpt35_turbo
+llm = groq
 
 # Initialize crewAI tools
 search_tool = SerperDevTool()
